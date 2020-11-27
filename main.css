@@ -521,4 +521,15 @@ h1 {
    .footerh1 h1{
     font-size: 20px;
    }
-} 
+ }
+  @media only screen and (max-device-width: 780px) and (min-device-width: 480px) { 
+    .container{
+      width:100%;
+    }
+    .story1, .story2, .story3{
+      overflow: hidden;
+      width:220px;
+     float:left; 
+     display: inline-block;
+   }
+  }
