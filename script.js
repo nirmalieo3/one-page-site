@@ -36,9 +36,28 @@ $(function(){
   })
   $('#open').on('mouseleave',function(){
        $('#sideNav').css('height', '0') 
-       	  
     })
- 
- 
-})
+
+     $('#contact').on('submit', function(event){
+   event.preventDefault();
+   var email = $('#email').val();
+   var name = $('#name').val();
+   if (name == '' || name == undefined) {
+       errorMessage("<span>name is not completed</span>", '#name-container' )
+   }
+
+   if (email == '' || email == undefined) {
+       errorMessage("<span>email is not completed</span>", '#email-container' )
+   }
+
+   function errorMessage(errMessage, errContainer) {
+        $(errMessage) 
+            .addClass('err') 
+            .appendTo(errContainer) 
+            .fadeOut(5000); 
+    }
+    
+ })
+
+  })
 

@@ -73,8 +73,9 @@
 
   	  <section class=section1>
         <div class="banner1">
-  	  	  <img src="img/herobanner.jpg" class="banner">  
-          
+  	  	  <img src="img/herobanner.jpg" class="banner">
+        </div>
+        
   	   <article class="article1">
   	  	  <h1>I nuovi corsi web in partenza</h1>
   	  	  <p>In aula a Roma / In Diretta Streaming / On Demand</p>
@@ -165,15 +166,21 @@
         	<div class="describe">
         		<h1>Scrivici per ricevere maggiori informazioni sui corsi LABFORTRAINING e sulle modalità di iscrizione</h1>
         	</div>
-          <diV class="form">
-        	<form action="/action_page.php">
-                <label for="fname">Name:</label><br><br>
-                <input type="text" id="fname" name="fname" value="John"><br><br>
-                <label for="e-mail">E-mail:</label><br><br>
-                <input type="e-mail" id="e-mail" name="email" value="e-mail"><br><br>
-                <label for="textbox">Information:</label><br><br>
-                <input type="text-box" id="textbox" name="text-box" value="text-box"><br><br>
-                 <input type="submit" value="Submit">
+          <diV class="form" id="form-container">
+        	<form id="contact">
+             <div id="name-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John">
+              </div>
+              <div id="email-container">
+                <label for="email">E-mail:</label>
+                <input type="e-mail" id="email" name="email" placeholder="e-mail">
+              </div>
+              <div id="info-container">
+                <label for="textbox">Inform:</label>
+                <input type="text-box" id="textbox" name="text-box" placeholder="text-box">
+               </div>
+                 <button type="submit" value="Submit" id="submit">Invia</button>
              </form> 
           </div>
         </article>
@@ -264,7 +271,7 @@
            </div>
         </footer>
       <div class="wrapper">
-        <h1>OPEN DAY DECEMBER LABFORTAINING</h1>
+        <h1>OPEN DAY LABFORTAINING</h1>
      </div>
      <div id="top">
         <a href="#" id="arrow">
