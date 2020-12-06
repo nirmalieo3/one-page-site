@@ -34,7 +34,7 @@ $(function(){
         items[i].style.width = '60px';
     }
   })
-  $('#open').on('mouseleave',function(){
+  $('#sideNav').on('mouseleave',function(){
        $('#sideNav').css('height', '0') 
     })
 
